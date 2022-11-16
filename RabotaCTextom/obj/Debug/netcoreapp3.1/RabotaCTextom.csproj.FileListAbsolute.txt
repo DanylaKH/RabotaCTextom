@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\obj\Debug\netcoreapp3.1\RabotaCTextom.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\obj\Debug\netcoreapp3.1\RabotaCTextom.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\obj\Debug\netcoreapp3.1\RabotaCTextom.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\obj\Debug\netcoreapp3.1\RabotaCTextom.AssemblyInfo.cs
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\obj\Debug\netcoreapp3.1\RabotaCTextom.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\bin\Debug\netcoreapp3.1\RabotaCTextom.exe
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\bin\Debug\netcoreapp3.1\RabotaCTextom.deps.json
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\bin\Debug\netcoreapp3.1\RabotaCTextom.runtimeconfig.json
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\bin\Debug\netcoreapp3.1\RabotaCTextom.runtimeconfig.dev.json
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\bin\Debug\netcoreapp3.1\RabotaCTextom.dll
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\bin\Debug\netcoreapp3.1\RabotaCTextom.pdb
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\obj\Debug\netcoreapp3.1\RabotaCTextom.dll
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\obj\Debug\netcoreapp3.1\RabotaCTextom.pdb
+C:\Users\admin\source\repos\RabotaCTextom\RabotaCTextom\obj\Debug\netcoreapp3.1\RabotaCTextom.genruntimeconfig.cache
