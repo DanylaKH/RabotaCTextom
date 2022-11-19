@@ -6,7 +6,17 @@ namespace RabotaCTextom
     {
         public string GetData()
         {
-            throw new NotImplementedException();
+            try
+            {
+                Console.WriteLine("Read from database");
+                string bdlines = Console.ReadLine();
+                Console.WriteLine("Read from database - success");
+                return bdlines;
+            }
+            catch
+            {
+                throw new InvalidOperationException("Read from database - failed");
+            }
         }
     }
 }
