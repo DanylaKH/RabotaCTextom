@@ -5,22 +5,33 @@ namespace RabotaCTextom
 {
     public class FileDataRetriever : IDataRetriever
     {
+        private string fileline = null;
         public string GetData()
         {
             try
             {
-                
-                using StreamReader sr = new StreamReader("C:\\Users\\admin\\Documents\\test.txt");
-                FileInfo fi = new FileInfo("C:\\Users\\admin\\Documents\\test.txt");
-                //It reads only single line. You should use ReadToEnd()
-                if(fi.Length < 2048)
+                Config cfg = new Config();
+                FileInfo fi = new FileInfo(cfg.path);
+                if(!File.Exists(cfg.path))
                 {
-                    string fileLine = sr.ReadToEnd();
-                    Console.WriteLine("Read from file - success");
-                    return fileLine;
+                    StreamWriter sw = File.CreateText(cfg.path);
+                    sw.WriteLine("This is test message");
+                    Console.WriteLine("Create new file - success");
+                    return fileline = "This is test message";
                 }
-                else
-                    throw new InvalidOperationException("File size error");
+                else {
+                    StreamReader sr = new StreamReader(cfg.path);
+                    //It reads only single line. You should use ReadToEnd()
+                    //fi.Length < 2048 - i use for check size file, if file size more than 2048 bytes i will issue exception
+                    if (fi.Length < 2048)
+                    {
+                        fileline = sr.ReadToEnd();
+                        Console.WriteLine("Read from file - success");
+                        return fileline;
+                    }
+                    else
+                        throw new InvalidOperationException("File size error");
+                }
             }
             catch
             {
