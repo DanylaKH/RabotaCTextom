@@ -10,24 +10,33 @@ namespace RabotaCTextom
 
         private static void Main(string[] args)
         {
+            
+            Console.WriteLine("Choose a solution method");
+            Console.WriteLine("1) Implementation using class");
+            Console.WriteLine("2) Implementation using strategy method");
+            string solutionchoise = Console.ReadLine();
             var choice = GetUserChoice();
-
-            // 1 Implementation using class
-            var workflow = new Workflow();
-            workflow.Run(choice.Retriever, choice.Flow);
-
-            //2 Implementation using strategy method
-            /*HanldeString(() =>
+            if (solutionchoise == "1")
             {
-                Console.WriteLine("Enter string");
-                return Console.ReadLine();
-            },
-            str => new string(str.Reverse().ToArray())
-            );
-            */
+                // 1 Implementation using class
+                var workflow = new Workflow();
+                workflow.Run(choice.Retriever, choice.Flow);
+            }
+            else 
+            {
+                //2 Implementation using strategy method
+                HanldeString(() =>
+                {
+                    Console.WriteLine("Enter string");
+                    return Console.ReadLine();
+                },
+                str => new string(str.Reverse().ToArray())
+                );
+            }
+
         }
 
-        /*private static void HanldeString(Func<string> retriever, Func<string, string> handler)
+        private static void HanldeString(Func<string> retriever, Func<string, string> handler)
         {
             Console.WriteLine("Do anything");
             var inputString = retriever();
@@ -36,7 +45,7 @@ namespace RabotaCTextom
             Console.WriteLine("Do anything");
 
             Console.WriteLine(handledString);
-        }*/
+        }
 
         private static (IDataRetriever Retriever, IDataWorkflow Flow) GetUserChoice()
         {
