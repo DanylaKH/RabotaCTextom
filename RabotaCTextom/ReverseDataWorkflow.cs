@@ -8,9 +8,7 @@ namespace RabotaCTextom
         public string DoOperation(string data)
         {
             string outputstring;
-            var words = data.Split(" ");
-            var reverseWords = words.Reverse().Select(c => new string(c.Reverse().ToArray())); ;
-            return outputstring = string.Join(" ", reverseWords);
+            return outputstring = string.Join(" ", data.Split(" ").Reverse().Select(c => new string(c.Reverse().ToArray())));
         }
         //str => new string(str.Reverse().ToArray()
     }
