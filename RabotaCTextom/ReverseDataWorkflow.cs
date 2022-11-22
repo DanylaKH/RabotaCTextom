@@ -12,5 +12,6 @@ namespace RabotaCTextom
             var reverseWords = words.Reverse().Select(c => new string(c.Reverse().ToArray())); ;
             return outputstring = string.Join(" ", reverseWords);
         }
+        //str => new string(str.Reverse().ToArray()
     }
 }

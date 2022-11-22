@@ -11,13 +11,12 @@ namespace RabotaCTextom
         public string Connect()
         {
             return path = "C:\\Users\\admin\\Documents\\test.txt";
-    }
+        }
 
         public string GetData()
         {
             try
             {
-                FileInfo fi = new FileInfo(path);
                 if(!File.Exists(path))
                 {
                     StreamWriter sw = File.CreateText(path);
