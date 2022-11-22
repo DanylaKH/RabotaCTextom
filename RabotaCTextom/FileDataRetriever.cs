@@ -17,22 +17,21 @@ namespace RabotaCTextom
         {
             try
             {
-                if(!File.Exists(path))
+                if(!File.Exists(Connect()))
                 {
-                    StreamWriter sw = File.CreateText(path);
+                    StreamWriter sw = File.CreateText(Connect());
                     sw.WriteLine("This is test message");
                     Console.WriteLine("Create new file - success");
                     return fileline = "This is test message";
                 }
                 else 
                 {
-                    StreamReader sr = new StreamReader(path);
+                    StreamReader sr = new StreamReader(Connect());
                     //It reads only single line. You should use ReadToEnd()
                     //fi.Length < 2048 - i use for check size file, if file size more than 2048 bytes i will issue exception
                     fileline = sr.ReadToEnd();
                     Console.WriteLine("Read from file - success");
                     return fileline;
-
                 }
             }
             catch

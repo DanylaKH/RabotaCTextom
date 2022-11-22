@@ -20,7 +20,7 @@ namespace RabotaCTextom
                 queryString = "SELECT Items FROM TestTable";
                 string outputstring = null;
                 List<string> word = new List<string>();
-                SqlConnection connectionString = new SqlConnection(dbConnect);
+                SqlConnection connectionString = new SqlConnection(Connect());
                 connectionString.Open();
                 Console.WriteLine("Database connection open");
                 SqlCommand comand = new SqlCommand(queryString, connectionString);
